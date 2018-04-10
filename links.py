@@ -15,11 +15,11 @@ DOT_DIR  = os.path.join(HOME_DIR, '/dotfiles')
 
 
 def main():
-    ignore_files = ['.git']
+    ignores = ['.git']
     rootdir = os.path.abspath(os.path.dirname(__file__))
     for root, dirs, files in os.walk(rootdir):
         for file in files:
-            if file[0] != '.' or any([file == ignore_file for ignore_file in ignore_files]):
+            if file[0] != '.' or any([file == ignore for ignore in ignores]):
                 continue
             linksrc = os.path.join(root, file)
             linkdst = os.path.join(HOME_DIR, file)
