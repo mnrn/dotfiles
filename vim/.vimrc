@@ -67,10 +67,10 @@ set nowritebackup
 set nobackup
 
 " Tab space
+set expandtab
 set tabstop=4
-
-" Indent space
 set shiftwidth=4
+set softtabstop=0
 
 " Show row number
 set number
