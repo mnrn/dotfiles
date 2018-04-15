@@ -1,4 +1,6 @@
-"dein Scripts-----
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" dein Scripts-----
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if &compatible
     set nocompatible " Be iMproved
 endif
@@ -48,6 +50,9 @@ syntax enable
 "End dein Scripts-----
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Basic settings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Syntax highlight on
 syntax on
 
@@ -87,7 +92,28 @@ set history=10000
 " Indent
 set autoindent
 
-" Powerline
+" Share clipboard
+set clipboard=unnamedplus
+
+" Enable mouse
+if has('mouse')
+    set mouse=a
+endif
+
+" Enable incremental search
+set incsearch
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Key mappings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+inoremap jj <Esc>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" GUI
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" powerline
 set laststatus=2
 set showtabline=2
 set noshowmode
@@ -95,12 +121,17 @@ set t_Co=256
 let g:airline_powerline_fonts = 1
 "let g:airline_theme = 'tomorrow'
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Languages
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" C/C++
+let g:clang_c_options = '-std=c11 -Weverything'
+let g:clang_cpp_options = '-std=c++1z -stdlib=libc++ -Wall -Wextra'
+
 " Rust
 let g:rustfmt_autosave = 1
 let g:rustfmt_command = '$HOME/.cargo/bin/rustfmt'
 set hidden
 let g:racer_cmd = '$HOME/.cargo/bin/racer'
 
-" C/C++
-let g:clang_c_options = '-std=c11 -Weverything'
-let g:clang_cpp_options = '-std=c++1z -stdlib=libc++ -Wall -Wextra'
