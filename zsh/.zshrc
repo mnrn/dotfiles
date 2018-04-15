@@ -116,7 +116,7 @@ function peco-cdr() {
 zle -N peco-cdr
 bindkey '^x' peco-cdr
 
-# select ssh Host from ~/.ssh/config
+# Select ssh Host from ~/.ssh/config
 function peco-ssh() {
 	local host="$(grep '^Host ' ~/.ssh/config | awk '{ print $2 }' | peco --prompt="ssh >" --query "$LBUFFER")"
 	if [ -n "$host" ]; then
@@ -128,6 +128,19 @@ function peco-ssh() {
 }
 zle -N peco-ssh
 bindkey '^\' peco-ssh
+
+# cd ghq
+function peco-cd-ghq() {
+    local selected_dir="$(ghq list -p | peco --prompt="cd-ghq >" --query "$LBUFFER")"
+    if [ -n "$selected_dir" ]; then
+        BUFFER="cd $selected_dir"
+        zle accept-line
+    else
+        zle reset-prompt
+    fi
+}
+zle -N peco-cd-ghq
+bindkey '^g' peco-cd-ghq
 
 # powerline
 powerline-daemon -q
