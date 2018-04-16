@@ -10,8 +10,9 @@ import sys
 
 # home directory.
 HOME_DIR = os.environ['HOME']
+
 # dotfiles directory.
-DOT_DIR  = os.path.join(HOME_DIR, '/dotfiles')
+DOT_DIR = os.path.join(HOME_DIR, '/dotfiles')
 
 
 def main():
@@ -23,8 +24,9 @@ def main():
                 continue
             linksrc = os.path.join(root, file)
             linkdst = os.path.join(HOME_DIR, file)
-            os.symlink(linksrc, linkdst) 
+            os.symlink(linksrc, linkdst)
             print("make symlink src={0}, dst={1}".format(linksrc, linkdst))
+
 
 # Post processing
 def exit():
@@ -35,7 +37,6 @@ def exit():
 
 
 if __name__ == '__main__':
-    #entry()
+    # entry()
     main()
     exit()
-
