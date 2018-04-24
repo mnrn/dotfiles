@@ -1,0 +1,35 @@
+#-------------------------------------------------------
+# tmux basic settings
+#-------------------------------------------------------
+# Assign C-t to prefix key
+set -g prefix C-t
+
+# Disable C-b keybind
+unbind C-b
+
+# Reduce keystroke delay
+set -sg escape-time 1
+
+# Reload .tmux.conf file with prefix + r.
+bind r source-file ~/.tmux.conf \; display "reloaded..!"
+
+# Split window horizon with prefix + |.
+bind | split-window -h
+
+# Split window vertical with prefix + -.
+bind - split-window -v
+
+# select-pane
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# Enable mouse.
+setw -g mouse on
+
+# Enable screen-256color.
+set -g default-terminal "screen-256color"
+
+# vi bind
+setw -g mode-keys vi
