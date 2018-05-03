@@ -1,18 +1,19 @@
-dotfiles
-====
+# dotfiles
 
-# Descpription
+
+## Descpription
+
 I was exhausted from repeated environmental creation.<br>
 So I decided to upload dotfiles to github.
 
-# Requirements
+## Requirements
 - Git
 - Python3.X
 
 <br>
 Please see Installation & Usage for more details.
 
-# Installation & Usage
+## Installation & Usage
 ```shell
 git clone https://github.com/mnrn/dotfiles
 cd dotfiles
