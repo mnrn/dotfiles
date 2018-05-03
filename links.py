@@ -16,7 +16,7 @@ DOT_DIR = os.path.join(HOME_DIR, '/dotfiles')
 
 
 def main():
-    ignores = ['.git'] # ignore files
+    ignores = ['.git']  # ignore files
     rootdir = os.path.abspath(os.path.dirname(__file__))
     for root, dirs, files in os.walk(rootdir):
         for file in files:
@@ -32,10 +32,13 @@ def main():
 def exit():
     linksrc = os.path.join(HOME_DIR, '.vimrc')
     linkdst = os.path.join(HOME_DIR, '.config/nvim/init.vim')
+    if not os.path.exists(linkdst):
+        return
+    # make symlink to neovim.
     os.symlink(linksrc, linkdst)
     print("make symlink src={0}, dst={1}".format(linksrc, linkdst))
 
 
 if __name__ == '__main__':
     main()
-    #exit()
+    # exit()

@@ -4,11 +4,14 @@
 ## Descpription
 
 I was exhausted from repeated environmental creation.<br>
-So I decided to upload dotfiles to github.
+So I decided to upload dotfiles to github.<br>
+<br>
+There are descriptions about vim and zsh, tmux settings.
+
 
 ## Requirements
 - Git
-- Python3.X
+- Python 3.X
 
 <br>
 Please see Installation & Usage for more details.
