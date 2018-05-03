@@ -8,15 +8,15 @@ import os
 import sys
 
 
-# home directory.
+# Home directory.
 HOME_DIR = os.environ['HOME']
 
-# dotfiles directory.
+# Dotfiles directory.
 DOT_DIR = os.path.join(HOME_DIR, '/dotfiles')
 
 
 def main():
-    ignores = ['.git']
+    ignores = ['.git'] # ignore files
     rootdir = os.path.abspath(os.path.dirname(__file__))
     for root, dirs, files in os.walk(rootdir):
         for file in files:
@@ -37,6 +37,5 @@ def exit():
 
 
 if __name__ == '__main__':
-    # entry()
     main()
-    exit()
+    #exit()
