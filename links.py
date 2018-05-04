@@ -34,11 +34,12 @@ def exit():
     linkdst = os.path.join(HOME_DIR, '.config/nvim/init.vim')
     if not os.path.exists(linkdst):
         return
-    # make symlink to neovim.
+
+    # make symlink for neovim.
     os.symlink(linksrc, linkdst)
     print("make symlink src={0}, dst={1}".format(linksrc, linkdst))
 
 
 if __name__ == '__main__':
     main()
-    # exit()
+    exit()
