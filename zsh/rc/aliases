@@ -1,2 +1,15 @@
-alias ls='exa'
-alias grep='rg'
+if [[ -x `which exa` ]]; then
+    alias ls='exa'
+fi
+
+if [[ -x `which rg` ]]; then
+    alias grep='rg'
+fi
+
+if [[ -x `which colordiff` ]]; then
+    alias diff='colordiff'
+fi
+
+if [[ -x `which ccat` ]]; then
+    alias cat='ccat'
+fi
