@@ -16,3 +16,7 @@ fi
 if [[ -x `which ccat` ]]; then
     alias cat='ccat'
 fi
+
+if [[ -x `which gsed` ]]; then
+    alias sed='gsed'
+fi
