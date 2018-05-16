@@ -14,5 +14,6 @@ case ${OSTYPE} in
         source ~/dotfiles/zsh/env/linux/tools
         ;;
     darwin*)
+        source ~/dotfiles/zsh/env/macosx/basiclangs
         ;;
 esac
