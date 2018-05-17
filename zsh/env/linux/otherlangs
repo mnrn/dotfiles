@@ -11,9 +11,6 @@ export PATH=$PATH:$HOME/Nim/bin
 export SCALA_HOME=$HOME/local/scala
 export PATH=$PATH:$SCALA_HOME/bin
 
-# powerline and haskell tools
-export PATH=$PATH:$HOME/.local/bin
-
 # cuda
 export CUDA_HOME=/usr/local/cuda-8.0
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${CUDA_HOME}/lib64

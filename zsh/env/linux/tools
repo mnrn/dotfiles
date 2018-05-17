@@ -1,6 +1,10 @@
 #-------------------------------------------------
 # tools
 #-------------------------------------------------
+
+# powerline and etc tools
+export PATH=$PATH:$HOME/.local/bin
+
 # pkg-config
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$HOME/local/lib/pkgconfig
 
