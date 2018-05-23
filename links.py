@@ -6,7 +6,7 @@
 
 import os
 import sys
-import logging
+import logging as log
 
 
 HOME_DIR = os.environ['HOME']                  # Home directory.
@@ -15,7 +15,7 @@ DOT_DIR = os.path.join(HOME_DIR, '/dotfiles')  # Dotfiles directory.
 
 # Pre processing
 def entry():
-    logging.basicConfig(format='%(asctime)s - %(levelname)s: %(message)s')
+    log.basicConfig(format='%(asctime)s - %(levelname)s: %(message)s')
 
 
 def main():
@@ -28,10 +28,10 @@ def main():
             linksrc = os.path.join(root, file)
             linkdst = os.path.join(HOME_DIR, file)
             if os.path.exists(linkdst):
-                logging.warn('already exists: ' + linkdst)
+                log.warn('already exists: ' + linkdst)
                 continue
             os.symlink(linksrc, linkdst)
-            logging.info('make symlink src={0}, dst={1}'.format(linksrc, linkdst))
+            log.info('make symlink src={0}, dst={1}'.format(linksrc, linkdst))
 
 
 # Post processing
@@ -39,12 +39,12 @@ def exit():
     linksrc = os.path.join(HOME_DIR, '.vimrc')
     linkdst = os.path.join(HOME_DIR, '.config/nvim/init.vim')
     if os.path.exists(linkdst):
-        logging.warn('already exists: '+ linkdst)
+        log.warn('already exists: ' + linkdst)
         return
 
     # make symlink for neovim.
     os.symlink(linksrc, linkdst)
-    logging.info('make symlink src={0}, dst={1}'.format(linksrc, linkdst))
+    log.info('make symlink src={0}, dst={1}'.format(linksrc, linkdst))
 
 
 if __name__ == '__main__':
