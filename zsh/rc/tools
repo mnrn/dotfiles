@@ -4,7 +4,7 @@
 if [[ -x `which exa` ]]; then
     alias ls='exa'
     alias lla='exa -la'
-    alias lc='exa -abghHlis --git'
+    alias lc='exa -abghHliS --git'
 fi
 
 if [[ -x `which rg` ]]; then
