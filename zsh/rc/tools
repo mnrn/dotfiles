@@ -3,6 +3,8 @@
 #-------------------------------------------------
 if [[ -x `which exa` ]]; then
     alias ls='exa'
+    alias lla='exa -la'
+    alias lc='exa -abghHlis --git'
 fi
 
 if [[ -x `which rg` ]]; then
@@ -10,7 +12,7 @@ if [[ -x `which rg` ]]; then
 fi
 
 if [[ -x `which colordiff` ]]; then
-    alias diff='colordiff'
+    alias diff='colordiff -u'
 fi
 
 if [[ -x `which ccat` ]]; then
@@ -20,3 +22,11 @@ fi
 if [[ -x `which gsed` ]]; then
     alias sed='gsed'
 fi
+
+
+#-------------------------------------------------
+# Coloring
+#-------------------------------------------------
+export LESS='-R'
+export LESSOPEN='| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'
+
