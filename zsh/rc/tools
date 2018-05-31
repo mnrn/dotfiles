@@ -4,7 +4,7 @@
 if [[ -x `which exa` ]]; then
     alias ls='exa'
     alias lla='exa -la'
-    alias lc='exa -abghHliS --git'
+    alias ll='exa -abghHliS --git'
 fi
 
 if [[ -x `which rg` ]]; then
@@ -28,5 +28,12 @@ fi
 # Coloring
 #-------------------------------------------------
 export LESS='-R'
-export LESSOPEN='| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'
+case ${OSTYPE} in
+    linux*)
+        export LESSOPEN='| /usr/share/source-highlight/src-hilite-lesspipe.sh %s'
+        ;;
+    darwin*)
+        export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
+        ;;
+esac
 
