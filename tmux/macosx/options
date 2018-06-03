@@ -12,8 +12,8 @@ bind-key > save-buffer ~/.tmux-buffer \; run-shell 'xsel -b -i < ~/.tmux-buffer'
 bind-key < if-shell 'xsel -b -o > ~/.tmux-buffer' 'load-buffer ~/.tmux-buffer ; paster-buffer'
 
 # shell
-set-option -g default-shell /usr/bin/zsh
-set-option -g default-command /usr/bin/zsh
+set-option -g default-shell /usr/local/bin/zsh
+set-option -g default-command /usr/local/bin/zsh
 
 # powerline
 run-shell "powerline-deamon -q"
