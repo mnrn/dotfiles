@@ -21,6 +21,10 @@ if [[ -x `which gsed` ]]; then
     alias sed='gsed'
 fi
 
+if [[ -x `which tmux` ]]; then
+    alias tmux='tmux -u'
+fi
+
 
 #-------------------------------------------------
 # Coloring
