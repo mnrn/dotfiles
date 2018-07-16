@@ -57,8 +57,8 @@ setopt no_beep
 # Setup Language in Terminal.
 case $TERM in
     linux) LANG=C;;
-    xterm-256color)  LANG=C;;
-    screen-256color) LANG=C;;
+    xterm-256color)  LANG=ja_JP.UTF-8;;
+    screen-256color) LANG=ja_JP.UTF-8;;
    *)     LANG=ja_JP.UTF-8;;
 esac
 
