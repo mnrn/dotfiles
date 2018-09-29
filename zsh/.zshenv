@@ -1,6 +1,6 @@
 ##### ##### ##### ##### ##### ##### ##### #####
 # @file .zshenv
-##### ##### ##### ##### ##### ##### ##### ##### 
+##### ##### ##### ##### ##### ##### ##### #####
 
 #-------------------------------------------------
 # source files
@@ -15,7 +15,7 @@ case ${OSTYPE} in
         ;;
     darwin*)
 	    source ~/dotfiles/zsh/env/macosx/options.zshenv
-        source ~/dotfiles/zsh/env/macosx/basiclangs.zshenv
+      source ~/dotfiles/zsh/env/macosx/basiclangs.zshenv
 	    source ~/dotfiles/zsh/env/macosx/tools.zshenv
         ;;
 esac
