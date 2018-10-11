@@ -9,7 +9,7 @@ import sys
 import logging
 
 HOME_DIR = os.environ['HOME']                  # Home directory.
-DOT_DIR = os.path.join(HOME_DIR, '/dotfiles')  # Dotfiles directory.
+DOT_DIR = os.path.join(HOME_DIR, 'dotfiles')  # Dotfiles directory.
 
 logger = logging.getLogger(__name__)
 
@@ -21,7 +21,7 @@ def entry():
     logger.addHandler(ch)
 
 def main():
-    ignores = ['.git']  # ignore files
+    ignores = ['.git', '.gitignore', '.DS_Store']  # ignore files
     rootdir = os.path.abspath(os.path.dirname(__file__))
     for root, _, files in os.walk(rootdir):
         for file in files:
