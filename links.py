@@ -15,9 +15,9 @@ logger = logging.getLogger(__name__)
 
 # Pre processing
 def entry():
-    ch = logging.streamHandler()
+    ch = logging.StreamHandler()
     formatter = logging.Formatter('%(asctime)s - %(levelname)s: %(message)s')
-    ch.setFortmatter(formatter)
+    ch.setFormatter(formatter)
     logger.addHandler(ch)
 
 def main():
