@@ -26,12 +26,9 @@ if dein#load_state('~/.cache/dein')
     " vim-airline
     call dein#add('vim-airline/vim-airline')
     call dein#add('vim-airline/vim-airline-themes')
-    
+
     " clang
     call dein#add('justmao945/vim-clang')
-
-    " golang
-    call dein#add('zchee/deoplete-go', {'build': 'make'})
 
     " You can specify revision/branch/tag.
     "call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
