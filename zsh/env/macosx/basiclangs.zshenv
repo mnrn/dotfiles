@@ -11,8 +11,8 @@ export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/local/include
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/local/lib
 
 # for cmake
-export CC=usr/local/opt/llvm/bin/clang
-export CXX=usr/local/opt/llvm/bin/clang++
+export CC=/usr/local/opt/llvm/bin/clang
+export CXX=/usr/local/opt/llvm/bin/clang++
 
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv
