@@ -14,7 +14,7 @@ bindkey '^Q' push-line-or-edit
 HISTSIZE=100000
 SAVEHIST=100000
 
-# history file.
+# History file.
 HISTFILE=~/.zsh_history
 
 # Share history with multiple terminals.
@@ -27,8 +27,7 @@ compinit
 # Use extended glob pattern.
 setopt extended_glob
 
-# Do not distinguish uppercase and lowercase letters,
-# hyphens and underscores on completion.
+# Do not distinguish uppercase and lowercase letters, hyphens and underscores on completion.
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 'm{a-zA-Z}={A-Za-z}' 'r:[._-]=* r:=* l:|=*'
 
 # Disable compctl.
@@ -51,7 +50,7 @@ setopt correct
 # Do not beep.
 setopt no_beep
 
-# stack size = 1GB.
+# Stack size = 1GB.
 # ulimit -s 1048576
 
 # Setup Language in Terminal.
