@@ -10,6 +10,7 @@ import logging
 class Links(object):
 
     def __init__(self, logger=None):
+        # Constant Values
         self.HOME_DIR = os.environ['HOME']  # Home directory.
         self.LOGGER_FORMAT = '%(asctime)s - %(levelname)s: %(message)s'
         self.SYMLINKS_MSG = 'make symlink src={0}, dst={1}'
