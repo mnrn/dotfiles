@@ -27,4 +27,4 @@ export GOCACHE=$GOPATH/caches/build
 
 # rust
 export PATH=$PATH:$HOME/.cargo/bin
-export RUST_SRC_PATH=$HOME/.multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
+export RUST_SRC_PATH=$HOME/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
