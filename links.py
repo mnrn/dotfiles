@@ -7,6 +7,7 @@
 import os
 import logging
 
+
 class Links(object):
 
     def __init__(self, logger=None):
@@ -26,7 +27,6 @@ class Links(object):
         else:
             self.logger = logger
 
-
     def exec(self, ignores):
         rootdir = os.path.abspath(os.path.dirname(__file__))
         for root, _, files in os.walk(rootdir):
@@ -43,7 +43,6 @@ class Links(object):
                     continue
                 os.symlink(linksrc, linkdst)
                 self.logger.info(self.SYMLINKS_MSG.format(linksrc, linkdst))
-
 
     def neovim_symlink(self):
         linksrc = os.path.join(self.HOME_DIR, '.vimrc')
