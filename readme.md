@@ -24,8 +24,10 @@ There are descriptions about vim and zsh, tmux settings.
 - [peco](https://github.com/peco/peco)
 - [exa](https://github.com/ogham/exa)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [fd](https://github.com/sharkdp/fd)
 - [ccat](https://github.com/jingweno/ccat)
 - [colordiff](https://github.com/daveewart/colordiff)
+- [Source-highlight](https://www.gnu.org/software/src-highlite/)
 - [iStats(mac)](https://github.com/Chris911/iStats)
 - [OpenSSL](https://github.com/openssl/openssl)
 

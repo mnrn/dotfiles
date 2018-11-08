@@ -9,6 +9,10 @@ if [[ -x `which rg` ]]; then
     alias grep='rg --color=auto'
 fi
 
+if [[ -x `which fd` ]]; then
+    alias find='fd --color=auto'
+fi
+
 if [[ -x `which colordiff` ]]; then
     alias diff='colordiff --color=auto'
 fi
