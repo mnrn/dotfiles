@@ -60,6 +60,7 @@ case $TERM in
     screen-256color) LANG=ja_JP.UTF-8;;
    *)     LANG=ja_JP.UTF-8;;
 esac
+export LC_ALL=$LANG
 
 # Avoid path duplication.
 typeset -U path PATH

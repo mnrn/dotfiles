@@ -5,7 +5,7 @@
 #-------------------------------------------------
 # source files
 #-------------------------------------------------
-source ~/dotfiles/zsh/rc/basic.zsh
+source ~/dotfiles/zsh/rc/basics.zsh
 source ~/dotfiles/zsh/rc/oh_my_zsh.zsh
 source ~/dotfiles/zsh/rc/powerline.zsh
 source ~/dotfiles/zsh/rc/peco.zsh
