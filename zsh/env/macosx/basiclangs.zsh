@@ -4,7 +4,7 @@
 # clang
 export PATH=/usr/local/opt/llvm/bin:$PATH
 export LDFLAGS=-L/usr/local/opt/llvm/lib
-export CPPFLAGS=-I/usr/local/opt/llvm/include
+export CPPFLAGS=-I/usr/local/opt/llvm/include/c++/v1
 
 # gcc/clang
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/local/include
@@ -24,6 +24,9 @@ export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/.go
 export PATH=$PATH:$HOME/.go/bin
 export GOCACHE=$GOPATH/caches/build
+export CGO_ENABLED=0
+export CGO_CPPFLAGS=$CPPFLAGS
+export CGO_LDFLAGS="$LDFLAGS -g -O2"
 
 # rust
 export PATH=$PATH:$HOME/.cargo/bin
