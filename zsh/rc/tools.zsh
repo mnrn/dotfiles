@@ -29,6 +29,9 @@ if [[ -x `which tmux` ]]; then
     alias tmux='tmux -u'
 fi
 
+if [[ -x `which greadlink` ]]; then
+    alias readlink='greadlink'
+fi
 
 #-------------------------------------------------
 # Coloring
