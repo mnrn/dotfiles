@@ -18,13 +18,13 @@ bindkey '^h' peco-history
 
 # Directory movement remaining in history by peco & cdr.
 function peco-cdr() {
-  local dst="$(cdr -l | sed 's/^[0-9]\+ \+//' | peco --prompt="cdr >" --query "$LBUFFER")"
-  if [ -n "$dst" ]; then
-      BUFFER="cd $dst"
-      zle accept-line
-  else
-      zle reset-prompt
-  fi
+    local dst="$(cdr -l | sed 's/^[0-9]\+ \+//' | peco --prompt="cdr >" --query "$LBUFFER")"
+    if [ -n "$dst" ]; then
+        BUFFER="cd $dst"
+        zle accept-line
+    else
+        zle reset-prompt
+    fi
 }
 zle -N peco-cdr
 bindkey '^x' peco-cdr
