@@ -33,3 +33,8 @@ export CGO_LDFLAGS="$LDFLAGS -g -O2"
 # rust
 export PATH=$PATH:$HOME/.cargo/bin
 export RUST_SRC_PATH=$HOME/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
+
+# ruby
+export RBENV_ROOT=$HOME/.rbenv
+export PATH=$RBENV_ROOT/shims:$PATH
+eval "$(rbenv init -)"
