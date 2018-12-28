@@ -11,3 +11,4 @@ source ~/dotfiles/zsh/rc/powerline.zsh
 source ~/dotfiles/zsh/rc/peco.zsh
 source ~/dotfiles/zsh/rc/tools.zsh
 source ~/dotfiles/zsh/rc/tmux.zsh
+source ~/dotfiles/zsh/rc/travis.zsh
