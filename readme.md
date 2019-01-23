@@ -33,7 +33,7 @@ There are descriptions about vim and zsh, tmux settings.
 
 ## Futures
 
-Enable setting by Toml file.
+Enable setting by commandline arguments.
 
 ## Installation
 
