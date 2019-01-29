@@ -6,8 +6,13 @@ export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/local/include
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/local/lib
 
 # for cmake
-export CC=$HOME/local/bin/clang
-export CXX=$HOME/local/bin/clang++
+if [ -e /etc/lsb-release ]; then # Ubuntu
+    export CC=$HOME/local/bin/clang
+    export CXX=$HOME/local/bin/clang++
+elif [ -f /etc/centos-release]; then # CentOS
+    export CC=$HOME/local/bin/g
+    export CXX=$HOME/local/bin/g++
+fi
 
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv
