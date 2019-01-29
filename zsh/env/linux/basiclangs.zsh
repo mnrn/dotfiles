@@ -9,7 +9,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/local/lib
 if [ -e /etc/lsb-release ]; then # Ubuntu
     export CC=$HOME/local/bin/clang
     export CXX=$HOME/local/bin/clang++
-elif [ -e /etc/centos-release]; then # CentOS
+elif [ -e /etc/centos-release ]; then # CentOS
     export CC=$HOME/local/bin/g
     export CXX=$HOME/local/bin/g++
 fi
