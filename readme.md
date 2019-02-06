@@ -31,14 +31,16 @@ There are descriptions about vim and zsh, tmux settings.
 - [iStats(mac)](https://github.com/Chris911/iStats)
 - [OpenSSL](https://github.com/openssl/openssl)
 
-## Futures
-
-Enable setting by commandline arguments.
-
 ## Installation
 
-```shell
+```terminal
 git clone https://github.com/mnrn/dotfiles
 cd dotfiles
 python links.py
+```
+
+Enable neovim symlink
+
+```terminal
+python links.py --with-neovim
 ```
