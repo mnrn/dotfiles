@@ -39,7 +39,7 @@ cd dotfiles
 python links.py
 ```
 
-Neovim symlink.
+Neovim symlink can be run like so..
 
 ```terminal
 python links.py --with-neovim
