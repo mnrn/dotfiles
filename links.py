@@ -7,6 +7,7 @@
 import os
 import logging
 from pathlib import Path, PurePath
+import argparse
 
 
 class Links(object):
@@ -40,7 +41,7 @@ class Links(object):
                 linksrc = PurePath(root).joinpath(file)
                 linkdst = PurePath(self.HOME_DIR).joinpath(file)
                 if Path(linkdst).exists():
-                    self.logger.warn(self.EXISTS_MSG.format(linkdst))
+                    self.logger.warning(self.EXISTS_MSG.format(linkdst))
                     continue
                 Path(linksrc).symlink_to(linkdst)
                 self.logger.info(self.SYMLINKS_MSG.format(linksrc, linkdst))
@@ -49,7 +50,7 @@ class Links(object):
         linksrc = PurePath(self.HOME_DIR).joinpath('.vimrc')
         linkdst = PurePath(self.HOME_DIR).joinpath('.config/nvim/init.vim')
         if Path(linkdst).exists():
-            self.logger.warn(self.EXISTS_MSG.format(linkdst))
+            self.logger.warning(self.EXISTS_MSG.format(linkdst))
             return
 
         # Make symlink for neovim.
@@ -58,8 +59,12 @@ class Links(object):
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Make symlinks.')
+    parser.add_argument('--with-neovim', action='store_true')
+    args = parser.parse_args()
 
     links = Links()
     links.exec(ignores=['.git', '.gitignore', '.DS_Store'])
 
-    links.neovim_symlink()
+    if args.with_neovim:
+        links.neovim_symlink()
