@@ -38,3 +38,6 @@ export RUST_SRC_PATH=$HOME/.multirust/toolchains/stable-x86_64-apple-darwin/lib/
 export RBENV_ROOT=$HOME/.rbenv
 export PATH=$RBENV_ROOT/shims:$PATH
 eval "$(rbenv init -)"
+
+# anyenv
+eval "$(anyenv init -)"
