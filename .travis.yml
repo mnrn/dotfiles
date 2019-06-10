@@ -1,0 +1,17 @@
+dist: xenial
+language: python
+python:
+  - 3.7
+notifications:
+  email: false
+install:
+  - pip install flake8
+  - pip install autopep8
+script:
+  - flake8 ./
+  - num_errors_before_autopep8=`flake8 ./ | wc -l`
+  - echo num_errors_before_autopep8=$num_errors_before_autopep8
+  - find . -name \*.py -exec autopep8 --recursive --aggressive --aggressive --in-place {} +
+  - num_errors_after_autopep8=`flake8 ./ | wc -l`
+  - echo num_errors_after_autopep8=$num_errors_after_autopep8
+  - flake8 ./
