@@ -1,5 +1,7 @@
 # dotfiles
 
+[![Build Status](https://travis-ci.org/mnrn/dotfiles.svg?branch=master)](https://travis-ci.org/mnrn/dotfiles)
+
 ## Overview
 
 I was exhausted from repeated environmental creation.  
