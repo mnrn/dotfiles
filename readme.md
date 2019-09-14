@@ -4,7 +4,7 @@
 
 ## Overview
 
-I'm so exhausted repeated creating environment.  
+I'm so exhausted by repeated creating environment.  
 So I decided to upload dotfiles to github.  
 
 There are descriptions about vim and zsh, tmux settings.
