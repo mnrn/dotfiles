@@ -20,6 +20,7 @@ export CXX=/usr/bin/g++
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/shims:$PATH
 eval "$(pyenv init -)"
+export PYTHONUSERBASE=$HOME/.local
 
 # golang
 export PATH=$PATH:/usr/local/go/bin
