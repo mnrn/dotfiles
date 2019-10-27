@@ -62,5 +62,8 @@ case $TERM in
 esac
 export LC_ALL=$LANG
 
+# for R
+disable r
+
 # Avoid path duplication.
 typeset -U path PATH
