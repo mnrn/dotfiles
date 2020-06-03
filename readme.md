@@ -22,9 +22,9 @@ There are descriptions about vim and zsh, tmux settings.
 ### Options
 
 - [Ricty(for powerline)](https://www.rs.tus.ac.jp/yyusa/ricty.html)
-- [CMake](https://github.com/Kitware/CMake)
 - [Neovim](https://github.com/neovim/neovim)
 - [peco](https://github.com/peco/peco)
+- [ghq](https://github.com/x-motemen/ghq)
 - [exa](https://github.com/ogham/exa)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [fd](https://github.com/sharkdp/fd)

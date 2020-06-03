@@ -41,4 +41,6 @@ export PATH=$RBENV_ROOT/shims:$PATH
 eval "$(rbenv init -)"
 
 # anyenv
+export PATH=$HOME/.anyenv/bin:$PATH
 eval "$(anyenv init -)"
+alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
