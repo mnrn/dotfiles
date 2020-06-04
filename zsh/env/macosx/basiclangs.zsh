@@ -16,12 +16,6 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/local/lib
 export CC=/usr/bin/gcc
 export CXX=/usr/bin/g++
 
-# pyenv
-export PYENV_ROOT=$HOME/.pyenv
-export PATH=$PYENV_ROOT/shims:$PATH
-eval "$(pyenv init -)"
-export PYTHONUSERBASE=$HOME/.local
-
 # golang
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/.go
@@ -35,12 +29,18 @@ export CGO_LDFLAGS="$LDFLAGS -g -O2"
 export PATH=$PATH:$HOME/.cargo/bin
 export RUST_SRC_PATH=$HOME/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
 
-# ruby
-export RBENV_ROOT=$HOME/.rbenv
-export PATH=$RBENV_ROOT/shims:$PATH
-eval "$(rbenv init -)"
-
 # anyenv
 export PATH=$HOME/.anyenv/bin:$PATH
 eval "$(anyenv init -)"
 alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
+
+# pyenv
+#export PYENV_ROOT=$HOME/.pyenv
+#export PATH=$PYENV_ROOT/shims:$PATH
+#eval "$(pyenv init -)"
+#export PYTHONUSERBASE=$HOME/.local
+
+# ruby
+#export RBENV_ROOT=$HOME/.rbenv
+#export PATH=$RBENV_ROOT/shims:$PATH
+#eval "$(rbenv init -)"
