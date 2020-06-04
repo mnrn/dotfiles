@@ -5,9 +5,6 @@
 
 ## Overview
 
-I'm so exhausted by repeated creating environment.  
-So I decided to upload dotfiles to github.  
-
 There are descriptions about vim and zsh, tmux settings.
 
 ## Requirements
@@ -25,14 +22,13 @@ There are descriptions about vim and zsh, tmux settings.
 - [Neovim](https://github.com/neovim/neovim)
 - [peco](https://github.com/peco/peco)
 - [ghq](https://github.com/x-motemen/ghq)
+- [gnu-sed](https://www.gnu.org/software/sed/)
 - [exa](https://github.com/ogham/exa)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [fd](https://github.com/sharkdp/fd)
 - [ccat](https://github.com/jingweno/ccat)
 - [colordiff](https://github.com/daveewart/colordiff)
 - [Source-highlight](https://www.gnu.org/software/src-highlite/)
-- [iStats(mac)](https://github.com/Chris911/iStats)
-- [OpenSSL](https://github.com/openssl/openssl)
 
 ## Installation
 

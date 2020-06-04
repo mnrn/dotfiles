@@ -1,18 +1,6 @@
 #-------------------------------------------------
 # aliases
 #-------------------------------------------------
-if [[ -x `which exa` ]]; then
-    alias ls='exa -abghHliS --git --color=auto'
-fi
-
-if [[ -x `which colordiff` ]]; then
-    alias diff='colordiff --color=auto'
-fi
-
-if [[ -x `which ccat` ]]; then
-    alias cat='ccat --color=auto'
-fi
-
 if [[ -x `which gsed` ]]; then
     alias sed='gsed'
 fi
