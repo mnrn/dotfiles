@@ -50,7 +50,7 @@ class Links(object):
         self.symlink(linksrc, linkdst)
 
     # Make symlink
-    def symlink(linksrc, linkdst):
+    def symlink(self, linksrc, linkdst):
         if Path(linkdst).exists():
             self.logger.warning(self.EXISTS_MSG.format(linkdst))
         else:
