@@ -7,6 +7,29 @@
 
 There are descriptions about vim and zsh, tmux settings.
 
+## Requirements
+
+- [Git](https://github.com/git/git)
+- [pyenv](https://github.com/pyenv/pyenv)
+- [Zsh](https://github.com/zsh-users/zsh)
+- [tmux](https://github.com/tmux/tmux)
+- [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [Powerline](https://github.com/powerline/powerline)
+
+### Options
+
+- [Ricty(for powerline)](https://www.rs.tus.ac.jp/yyusa/ricty.html)
+- [Neovim](https://github.com/neovim/neovim)
+- [peco](https://github.com/peco/peco)
+- [ghq](https://github.com/x-motemen/ghq)
+- [gnu-sed](https://www.gnu.org/software/sed/)
+- [lsd](https://github.com/Peltoche/lsd)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [fd](https://github.com/sharkdp/fd)
+- [bat](https://github.com/sharkdp/bat)
+- [delta](https://github.com/dandavison/delta)
+- [Source-highlight](https://www.gnu.org/software/src-highlite/)
+
 ## Tree
 
 ```text:
@@ -52,30 +75,6 @@ There are descriptions about vim and zsh, tmux settings.
       ├── tools.zsh
       └── travis.zsh
 ```
-
-
-## Requirements
-
-- [Git](https://github.com/git/git)
-- [pyenv](https://github.com/pyenv/pyenv)
-- [Zsh](https://github.com/zsh-users/zsh)
-- [tmux](https://github.com/tmux/tmux)
-- [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
-- [Powerline](https://github.com/powerline/powerline)
-
-### Options
-
-- [Ricty(for powerline)](https://www.rs.tus.ac.jp/yyusa/ricty.html)
-- [Neovim](https://github.com/neovim/neovim)
-- [peco](https://github.com/peco/peco)
-- [ghq](https://github.com/x-motemen/ghq)
-- [gnu-sed](https://www.gnu.org/software/sed/)
-- [lsd](https://github.com/Peltoche/lsd)
-- [ripgrep](https://github.com/BurntSushi/ripgrep)
-- [fd](https://github.com/sharkdp/fd)
-- [bat](https://github.com/sharkdp/bat)
-- [delta](https://github.com/dandavison/delta)
-- [Source-highlight](https://www.gnu.org/software/src-highlite/)
 
 ## Installation
 
