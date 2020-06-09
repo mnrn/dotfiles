@@ -23,11 +23,11 @@ There are descriptions about vim and zsh, tmux settings.
 - [peco](https://github.com/peco/peco)
 - [ghq](https://github.com/x-motemen/ghq)
 - [gnu-sed](https://www.gnu.org/software/sed/)
-- [exa](https://github.com/ogham/exa)
+- [lsd](https://github.com/Peltoche/lsd)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [fd](https://github.com/sharkdp/fd)
-- [ccat](https://github.com/jingweno/ccat)
-- [colordiff](https://github.com/daveewart/colordiff)
+- [bat](https://github.com/sharkdp/bat)
+- [delta](https://github.com/dandavison/delta)
 - [Source-highlight](https://www.gnu.org/software/src-highlite/)
 
 ## Installation

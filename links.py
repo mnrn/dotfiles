@@ -41,24 +41,21 @@ class Links(object):
 
                 linksrc = PurePath(root).joinpath(file)
                 linkdst = PurePath(self.HOME_DIR).joinpath(file)
-
-                if Path(linkdst).exists():
-                    self.logger.warning(self.EXISTS_MSG.format(linkdst))
-                    continue
-                else:
-                    Path(linkdst).symlink_to(linksrc)
-                self.logger.info(self.SYMLINKS_MSG.format(linksrc, linkdst))
+                self.symlink(linksrc, linkdst)
 
     # Make symlink for neovim.
     def neovim_symlink(self):
         linksrc = PurePath(self.HOME_DIR).joinpath('.vimrc')
         linkdst = PurePath(self.HOME_DIR).joinpath('.config/nvim/init.vim')
+        self.symlink(linksrc, linkdst)
+
+    # Make symlink
+    def symlink(linksrc, linkdst):
         if Path(linkdst).exists():
             self.logger.warning(self.EXISTS_MSG.format(linkdst))
-            return
-
-        Path(linkdst).symlink_to(linksrc)
-        self.logger.info(self.SYMLINKS_MSG.format(linksrc, linkdst))
+        else:
+            Path(linkdst).symlink_to(linksrc)
+            self.logger.info(self.SYMLINKS_MSG.format(linksrc, linkdst))
 
 
 if __name__ == '__main__':
