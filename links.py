@@ -44,9 +44,10 @@ class Links(object):
 
                 if Path(linkdst).exists():
                     self.logger.warning(self.EXISTS_MSG.format(linkdst))
+                    continue
                 else:
                     Path(linkdst).symlink_to(linksrc)
-                    self.logger.info(self.SYMLINKS_MSG.format(linksrc, linkdst))
+                self.logger.info(self.SYMLINKS_MSG.format(linksrc, linkdst))
 
     # Make symlink for neovim.
     def neovim_symlink(self):
