@@ -45,7 +45,6 @@ There are descriptions about vim and zsh, tmux settings.
 │  │  └── options.conf
 │  └── macosx
 │     └── options.conf
-├── tree.txt
 ├── vim
 │  ├── basics.vim
 │  ├── dein.vim
