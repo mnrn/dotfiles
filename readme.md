@@ -30,6 +30,51 @@ There are descriptions about vim and zsh, tmux settings.
 - [delta](https://github.com/dandavison/delta)
 - [Source-highlight](https://www.gnu.org/software/src-highlite/)
 
+## Tree
+
+```text:
+.
+├── LICENSE
+├── links.py
+├── readme.md
+├── tmux
+│  ├── common
+│  │  ├── basics.conf
+│  │  └── plugins.conf
+│  ├── linux
+│  │  └── options.conf
+│  └── macosx
+│     └── options.conf
+├── vim
+│  ├── basics.vim
+│  ├── dein.vim
+│  ├── keymaps.vim
+│  ├── langs.vim
+│  └── powerline.vim
+└── zsh
+   ├── env
+   │  ├── linux
+   │  │  ├── apis.zsh
+   │  │  ├── basiclangs.zsh
+   │  │  ├── options.zsh
+   │  │  ├── otherlangs.zsh
+   │  │  └── tools.zsh
+   │  └── macosx
+   │     ├── basiclangs.zsh
+   │     ├── brew.zsh
+   │     ├── db.zsh
+   │     ├── options.zsh
+   │     └── tools.zsh
+   └── rc
+      ├── basics.zsh
+      ├── oh_my_zsh.zsh
+      ├── peco.zsh
+      ├── powerline.zsh
+      ├── tmux.zsh
+      ├── tools.zsh
+      └── travis.zsh
+```
+
 ## Installation
 
 ```terminal
