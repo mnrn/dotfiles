@@ -46,7 +46,7 @@ bindkey '^\' peco-ssh
 function peco-cd-ghq() {
     local selected_dir="$(ghq list -p | peco --prompt="cd-ghq >" --query "$LBUFFER")"
     if [ -n "$selected_dir" ]; then
-        BUFFER="cd $selected_dir"
+        BUFFER="cd -P $selected_dir"
         zle accept-line
     else
         zle reset-prompt
