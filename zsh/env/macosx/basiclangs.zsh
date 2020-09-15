@@ -12,10 +12,6 @@ export PATH=/usr/local/opt/llvm/bin:$PATH
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/local/include
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/local/lib
 
-# cmake
-export CC=/usr/bin/gcc
-export CXX=/usr/bin/g++
-
 # golang
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/.go
