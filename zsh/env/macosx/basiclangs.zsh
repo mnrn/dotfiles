@@ -2,15 +2,15 @@
 # basic languages
 #-------------------------------------------------
 # clang
-export PATH=/usr/local/opt/llvm/bin:$PATH
+#export PATH=/usr/local/opt/llvm/bin:$PATH
 #export LDFLAGS=-L/usr/local/opt/llvm/lib
 #export CPPFLAGS=-I/usr/local/opt/llvm/include/c++/v1
 #export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
 #export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATh:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
 
 # gcc/clang
-export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/local/include
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/local/lib
+#export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/local/include
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/local/lib
 
 # golang
 export PATH=$PATH:/usr/local/go/bin
