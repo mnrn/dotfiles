@@ -20,5 +20,6 @@ case ${OSTYPE} in
         source ~/dotfiles/zsh/env/macosx/tools.zsh
         source ~/dotfiles/zsh/env/macosx/db.zsh
         source ~/dotfiles/zsh/env/macosx/llvm.zsh
+        source ~/dotfiles/zsh/env/macosx/api.zsh
         ;;
 esac
