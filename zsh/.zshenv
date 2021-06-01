@@ -23,3 +23,4 @@ case ${OSTYPE} in
         source ~/dotfiles/zsh/env/macosx/api.zsh
         ;;
 esac
+source "$HOME/.cargo/env"

@@ -9,8 +9,8 @@
 #export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATh:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
 
 # gcc/clang
-#export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/local/include
-#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/local/lib
+export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/local/include
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/local/lib
 
 # golang
 export PATH=$PATH:/usr/local/go/bin
@@ -30,3 +30,5 @@ export PATH=$HOME/.anyenv/bin:$PATH
 eval "$(anyenv init -)"
 alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
 
+# pipenv
+export PIPENV_VENV_IN_PROJECT=true
