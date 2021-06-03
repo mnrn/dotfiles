@@ -29,6 +29,9 @@ export RUST_SRC_PATH=$HOME/.multirust/toolchains/stable-x86_64-apple-darwin/lib/
 export PATH=$HOME/.anyenv/bin:$PATH
 eval "$(anyenv init -)"
 alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
+export PYENV_ROOT="$HOME/.anyenv/envs/pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
 # pipenv
 export PIPENV_VENV_IN_PROJECT=true
